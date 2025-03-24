@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Routine Checker</title>
+    <link rel="stylesheet" href="style.css">  <!-- Link to external CSS -->
+</head>
+<body>
+    <h1>Tri-Chandra Multiple Campus<br>
+        Routine of B.Sc.II Year Examination 2081 (Regular batch 2079)<br>
+        Time: 11:00 AM to 5:00 PM<br>
+        Published on 2081-12-10<br>
+    </h1>
+    
+    <div class="container">
+        <h2>Check Your Exam Routine</h2>
+        <input type="text" id="symbolNumber" placeholder="Enter 9-digit Symbol Number" maxlength="9">
+        <p class="error" id="error"></p>
+        <div id="subjects">
+            <label><input type="checkbox" value="Geology"> Geology</label><br>
+            <label><input type="checkbox" value="Microbiology"> Microbiology</label><br>
+            <label><input type="checkbox" value="Botany"> Botany</label><br>
+            <label><input type="checkbox" value="Zoology"> Zoology</label><br>
+            <label><input type="checkbox" value="Meteorology"> Meteorology</label><br>
+            <label><input type="checkbox" value="Environmental"> Environmental Science</label><br>
+            <label><input type="checkbox" value="Physics"> Physics</label><br>
+            <label><input type="checkbox" value="Chemistry"> Chemistry</label><br>
+            <label><input type="checkbox" value="Statistics"> Statistics</label><br>
+        </div>
+        <button onclick="checkRoutine()">Check Routine</button>
+        <div class="result" id="result"></div>
+    </div>
+    
+    <script src="script.js"></script>  <!-- Link to external JavaScript -->
+</body>
+</html>
