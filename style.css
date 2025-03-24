@@ -5,6 +5,7 @@ body {
     margin: 20px;
     background-color: #f2f7fc; /* Light blue background */
 }
+
 /* Default: PC layout */
 .pc-layout {
     display: block;  /* Show on PC */
@@ -13,11 +14,13 @@ body {
 .mobile-layout {
     display: none;  /* Hide on PC */
 }
+
+/* Checkbox Container */
 @media (max-width: 768px) {
     .checkbox-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 1px; /* Reduce gap between items */
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 10px; /* Adjust gap for better spacing */
         justify-content: center;
         align-items: center;
         text-align: left;
@@ -43,24 +46,15 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+
 input[type="text"] {
     max-width: 80%;
     font-size: 16px;
 }
-.container {
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
-}
-.checkbox-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
 
 /* Main Container */
 .container {
-    position: relative;
+    width: 90%;
     max-width: 500px;
     margin: auto;
     padding: 20px;
@@ -68,6 +62,7 @@ input[type="text"] {
     border-radius: 10px;
     background-color: #ffffff; /* White background for contrast */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    position: relative;
 }
 
 /* Moving Glowing Effect */
@@ -112,31 +107,32 @@ input[type="text"] {
     border: 2px solid black;
     border-radius: 5px;
 }
-
-/* Subject Selection Grid */
-#subjects {
+/* Container for checkboxes */
+.checkbox-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 subjects per row */
-    gap: 10px 30px; /* Row and column spacing */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px; /* Adjust spacing */
     justify-content: center;
-    max-width: 100%;
-    margin: 10px auto;
     text-align: left;
+    max-width: 300px; /* Adjust width */
+    margin: auto;
 }
 
-/* Individual Subject Labels */
-#subjects label {
+/* Styling for checkboxes and labels */
+.checkbox-container label {
     display: flex;
     align-items: center;
     gap: 8px; /* Space between checkbox and text */
-    white-space: nowrap; /* Prevents text from breaking into new lines */
+    white-space: nowrap;
 }
 
-/* Special styling for the last subject */
-#subjects label:last-child {
-    grid-column: span 2; /* Make it take full width */
-    text-align: left; /* Align text to left */
+/* Last checkbox centered */
+.checkbox-container label:last-child {
+    grid-column: span 2; /* Full width */
+    text-align: center;
+    justify-content: center;
 }
+
 
 /* Button Styling */
 button {
@@ -155,19 +151,6 @@ button {
 button:hover {
     background-color: #0056b3;
     transform: scale(1.05); /* Slight zoom effect */
-}
-
-@media (max-width: 768px) {
-    .checkbox-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-    .checkbox-container label {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 /* Error Message Styling */
