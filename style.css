@@ -116,7 +116,7 @@ input[type="text"] {
 /* Subject Selection Grid */
 #subjects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 subjects per row */
+    grid-template-columns: repeat(2, 1fr); /* 2 subjects per row */
     gap: 10px 30px; /* Row and column spacing */
     justify-content: center;
     max-width: 100%;
@@ -130,6 +130,12 @@ input[type="text"] {
     align-items: center;
     gap: 8px; /* Space between checkbox and text */
     white-space: nowrap; /* Prevents text from breaking into new lines */
+}
+
+/* Special styling for the last subject */
+#subjects label:last-child {
+    grid-column: span 2; /* Make it take full width */
+    text-align: left; /* Align text to left */
 }
 
 /* Button Styling */
