@@ -12,6 +12,20 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+input[type="text"] {
+    max-width: 80%;
+    font-size: 16px;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+.checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 
 /* Main Container */
 .container {
