@@ -106,6 +106,18 @@ button:hover {
     transform: scale(1.05); /* Slight zoom effect */
 }
 
+@media (max-width: 768px) {
+    .checkbox-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .checkbox-container label {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 /* Error Message Styling */
 .error {
