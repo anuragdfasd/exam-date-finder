@@ -107,31 +107,6 @@ input[type="text"] {
     border: 2px solid black;
     border-radius: 5px;
 }
-/* Container for checkboxes */
-.checkbox-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 15px; /* Adjust spacing */
-    justify-content: center;
-    text-align: left;
-    max-width: 300px; /* Adjust width */
-    margin: auto;
-}
-
-/* Styling for checkboxes and labels */
-.checkbox-container label {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Space between checkbox and text */
-    white-space: nowrap;
-}
-
-/* Last checkbox centered */
-.checkbox-container label:last-child {
-    grid-column: span 2; /* Full width */
-    text-align: center;
-    justify-content: center;
-}
 
 
 /* Button Styling */
