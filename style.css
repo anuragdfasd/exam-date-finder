@@ -13,15 +13,27 @@ body {
 .mobile-layout {
     display: none;  /* Hide on PC */
 }
-
-/* Mobile-specific styles */
 @media (max-width: 768px) {
-    .pc-layout {
-        display: none;  /* Hide PC layout */
+    .checkbox-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 2px; /* Reduce gap between items */
+        justify-content: center;
+        align-items: center;
+        text-align: left;
     }
 
-    .mobile-layout {
-        display: block;  /* Show only on mobile */
+    .checkbox-container label {
+        font-size: 12px; /* Shrink text */
+        display: flex;
+        align-items: center;
+        white-space: nowrap; /* Prevent text from breaking */
+        padding: 2px; /* Reduce spacing */
+    }
+
+    .checkbox-container input[type="checkbox"] {
+        transform: scale(0.8); /* Shrink checkboxes */
+        margin-right: 3px; /* Reduce space between checkbox and text */
     }
 }
 
