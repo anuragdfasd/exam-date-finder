@@ -6,19 +6,9 @@ body {
     background-color: #f2f7fc; /* Light blue background */
 }
 
-/* Default: PC layout */
-.pc-layout {
-    display: block;  /* Show on PC */
-}
-
-.mobile-layout {
-    display: none;  /* Hide on PC */
-}
-
-
 /* Title Styling */
 h1 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
