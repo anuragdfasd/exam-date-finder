@@ -15,30 +15,6 @@ body {
     display: none;  /* Hide on PC */
 }
 
-/* Checkbox Container */
-@media (max-width: 768px) {
-    .checkbox-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        gap: 10px; /* Adjust gap for better spacing */
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-    }
-
-    .checkbox-container label {
-        font-size: 12px; /* Shrink text */
-        display: flex;
-        align-items: center;
-        white-space: nowrap; /* Prevent text from breaking */
-        padding: 2px; /* Reduce spacing */
-    }
-
-    .checkbox-container input[type="checkbox"] {
-        transform: scale(0.8); /* Shrink checkboxes */
-        margin-right: 3px; /* Reduce space between checkbox and text */
-    }
-}
 
 /* Title Styling */
 h1 {
