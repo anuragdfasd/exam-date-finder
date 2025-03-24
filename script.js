@@ -146,3 +146,16 @@ function checkRoutine() {
 
     resultDiv.innerHTML = output || "No exam found for the given symbol number.";
 }
+function adjustLayout() {
+    if (window.innerWidth < 768) {
+        document.querySelector(".pc-layout").style.display = "none";
+        document.querySelector(".mobile-layout").style.display = "block";
+    } else {
+        document.querySelector(".pc-layout").style.display = "block";
+        document.querySelector(".mobile-layout").style.display = "none";
+    }
+}
+
+/* Run function on page load and screen resize */
+window.onload = adjustLayout;
+window.onresize = adjustLayout;
