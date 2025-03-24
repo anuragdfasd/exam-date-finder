@@ -5,6 +5,25 @@ body {
     margin: 20px;
     background-color: #f2f7fc; /* Light blue background */
 }
+/* Default: PC layout */
+.pc-layout {
+    display: block;  /* Show on PC */
+}
+
+.mobile-layout {
+    display: none;  /* Hide on PC */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .pc-layout {
+        display: none;  /* Hide PC layout */
+    }
+
+    .mobile-layout {
+        display: block;  /* Show only on mobile */
+    }
+}
 
 /* Title Styling */
 h1 {
